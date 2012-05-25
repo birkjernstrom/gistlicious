@@ -1,6 +1,6 @@
 var Gistlicious = {
     minGistId: 1,
-    maxGistId: 2000,
+    maxGistId: 693000,
 
     apiRoot: "https://api.github.com/gists/public",
 
