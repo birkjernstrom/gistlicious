@@ -63,6 +63,8 @@ var Gistlicious = {
             // Create the iframe's document
             var gistFrameHTML = '<html><body onload="parent.adjustIframeSize(\'' + data.id + '\', document.body.scrollHeight)"><scr' + 'ipt type="text/javascript" src="https://gist.github.com/' + data.id + '.js"></sc'+'ript></body></html>';
 
+            document.getElementById(targetId + "Id").value = data.id;
+
             // Set iframe's document with a trigger for this document to adjust the height
             var gistFrameDoc = gistFrame.document;
 

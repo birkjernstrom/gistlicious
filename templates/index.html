@@ -3,12 +3,18 @@
 	<h2>Two gists, but which one would you fork?</h2>
 	<div class="row">
         <div class="gist-container span6">
-			<button class="btn btn-success">I'd fork this</button>
+            <form action="/upvote" method="post">
+			<button class="btn btn-success" id="leftBtn" type="submit">I'd fork this</button>
+            <input type="hidden" name="gist_id" value="" id="leftId" />
             <div class="gist-container-iframe" id="left"></div>
+            </form>
 		</div>
 		<div class="gist-container span6">
-			<button class="btn btn-success">I'd fork this</button>
+            <form action="/upvote" method="post">
+            <button class="btn btn-success" id="rightBtn" type="submit">I'd fork this</button>
+            <input type="hidden" name="gist_id" value="" id="rightId" />
             <div class="gist-container-iframe" id="right"></div>
+            </form>
 		</div>
 	</div>
 	<script src="/static/main.js"></script>
