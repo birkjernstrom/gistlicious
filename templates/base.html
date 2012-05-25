@@ -23,13 +23,16 @@
 	</script>
 </head>
 <body>
-	<header class="navbar-fixed-top">
+	<div class="navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
 				<img id="logo" src="/static/img/logo.png" alt="Gistlicious" />
 			</div>
 		</div>
-	</header>
-	{% block body %}{% endblock %}
+	</div>
+
+	<div id="content" class="container">
+		{% block body %}{% endblock %}
+	</div>
 </body>
 </html>
