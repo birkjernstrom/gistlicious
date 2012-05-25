@@ -17,7 +17,7 @@ def upvote():
 
 @app.route('/toplist')
 def toplist():
-    toplist = app.storage.get_rank_list()
+    toplist = app.storage.get_rank_list(num=30)
     return render_template('toplist.html', toplist=toplist)
 
 if __name__ == '__main__':

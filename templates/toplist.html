@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block body %}
 	<h1>Toplist</h1>
-    <ul>
-    {% for gist_id in toplist %}
-        <li>{{ gist_id[0] }} {{ gist_id[1] }}</li>
-    {% endfor %} 
-    </ul>
+    <div style="margin-top: 20px;">
+        <ul style="margin: 0px">
+        {% for gist_id in toplist %}
+	    	<li style="list-style: none;"><script src="https://gist.github.com/{{ gist_id[0] }}.js?file=gistfile1.sh"></script></ul>
+        {% endfor %} 
+        </ul>
+    </div>
 {% endblock %}
