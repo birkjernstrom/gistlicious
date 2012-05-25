@@ -23,16 +23,39 @@
 	</script>
 </head>
 <body>
-	<div class="navbar-fixed-top">
+	<div id="fb-root"></div>
+	<script>
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=396842937033611";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<header class="navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
 				<img id="logo" src="/static/img/logo.png" alt="Gistlicious" />
 			</div>
 		</div>
-	</div>
+	</header>
 
 	<div id="content" class="container">
 		{% block body %}{% endblock %}
 	</div>
+
+	<footer class="container">
+		<ul>
+			<li>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Gistlicious - I'd fork that" data-hashtags="gistlicious">Tweet</a>
+			</li>
+			<li>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>	
+				<div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
+			</li>
+		</ul>
+	</footer>
 </body>
 </html>

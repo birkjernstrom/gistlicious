@@ -5,3 +5,21 @@
 #content {
     margin-top: 100px;
 }
+
+footer {
+    margin-top: 50px;
+    border-top: 1px dotted #EFEFEF;
+    padding-top: 10px;
+}
+
+    footer ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        footer li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
