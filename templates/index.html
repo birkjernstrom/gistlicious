@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 {% block body %}
 	<div class="row">
-		<div class="gist span6">
-			<script src="https://gist.github.com/2790416.js?file=gistfile1.sh"></script>
+		<div class="gist span6" id="left">
 		</div>
-		<div class="gist span6">
-			<script src="https://gist.github.com/2790416.js?file=gistfile1.sh"></script>
+		<div class="gist span6" id="right">
 		</div>
-	</div>
+    </div>
+    <script src="/static/main.js"></script>
 {% endblock %}
