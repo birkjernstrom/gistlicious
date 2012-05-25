@@ -2,13 +2,13 @@
 {% block body %}
 	<h2>Two gists, but which one would you fork?</h2>
 	<div class="row">
-		<div class="gist-container span6">
-			<script src="https://gist.github.com/2790416.js?file=gistfile1.sh"></script>
+        <div class="gist-container span6">
 			<button class="btn btn-success">I'd fork this</button>
+            <div class="gist-container-iframe" id="left"></div>
 		</div>
 		<div class="gist-container span6">
-			<script src="https://gist.github.com/2790416.js?file=gistfile1.sh"></script>
 			<button class="btn btn-success">I'd fork this</button>
+            <div class="gist-container-iframe" id="right"></div>
 		</div>
 	</div>
 	<script src="/static/main.js"></script>

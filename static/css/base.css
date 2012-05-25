@@ -22,6 +22,14 @@ h2 {
     text-align: center;
 }
 
+.gist-container-iframe {
+    margin-top: 10px;
+}
+
+iframe {
+    border: 0;
+}
+
 footer {
     margin-top: 20px;
 }
