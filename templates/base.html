@@ -35,10 +35,16 @@
 	}(document, 'script', 'facebook-jssdk'));
 	</script>
 
-	<header class="navbar-fixed-top">
+	<header class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<img id="logo" src="/static/img/logo.png" alt="Gistlicious" />
+				<img id="logo" class="brand" src="/static/img/logo.png" alt="Gistlicious" />
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li><a href="/">Vote</a></li>
+						<li><a href="/toplist">Toplist</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
