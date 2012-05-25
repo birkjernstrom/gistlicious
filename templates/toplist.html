@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block body %}
+	<h1>Toplist</h1>
+    <ul>
+    {% for gist_id in toplist %}
+        <li>{{ gist_id[0] }} {{ gist_id[1] }}</li>
+    {% endfor %} 
+    </ul>
+{% endblock %}
