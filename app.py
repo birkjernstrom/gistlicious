@@ -1,6 +1,6 @@
 import os
 from flask import Flask
-from flask import render_template, request
+from flask import render_template, request, redirect
 from giststorage import GistStorage
 from local import REDIS_PASSWORD
 
@@ -13,7 +13,8 @@ def index():
 
 @app.route('/upvote', methods=['POST'])
 def upvote():
-    return '%s' % app.storage.upvote(int(request.form['gist_id']))
+    app.storage.upvote(int(request.form['gist_id']))
+    return redirect('/')
 
 @app.route('/toplist')
 def toplist():
