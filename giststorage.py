@@ -1,7 +1,7 @@
 from redis import StrictRedis
 
 class GistStorage(object):
-    SUPER_KEY = 'testar'
+    SUPER_KEY = 'live'
 
     def __init__(self, host, port, password):
         self.client = StrictRedis(host=host, port=port, password=password)
