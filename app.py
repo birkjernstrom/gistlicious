@@ -5,7 +5,7 @@ from giststorage import GistStorage
 from local import REDIS_PASSWORD
 
 app = Flask(__name__)
-app.debug = True
+app.debug = False
 
 @app.route('/')
 def index():
