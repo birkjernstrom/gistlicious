@@ -1,3 +1,6 @@
 [submodule "lib/github"]
 	path = lib/github
 	url = https://github.com/fitzgen/github-api.git
+[submodule "bootstrap"]
+	path = static/bootstrap
+	url = https://github.com/twitter/bootstrap.git
