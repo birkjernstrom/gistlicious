@@ -1,10 +1,15 @@
 {% extends "base.html" %}
 {% block body %}
+	<h2>Two gists, but which one would you fork?</h2>
 	<div class="row">
-		<div class="gist span6" id="left">
+		<div class="gist-container span6">
+			<script src="https://gist.github.com/2790416.js?file=gistfile1.sh"></script>
+			<button class="btn btn-success">I'd fork this</button>
 		</div>
-		<div class="gist span6" id="right">
+		<div class="gist-container span6">
+			<script src="https://gist.github.com/2790416.js?file=gistfile1.sh"></script>
+			<button class="btn btn-success">I'd fork this</button>
 		</div>
-    </div>
-    <script src="/static/main.js"></script>
+	</div>
+	<script src="/static/main.js"></script>
 {% endblock %}

@@ -1,15 +1,29 @@
+body {
+    background: #EEE;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: 'Homenaje', sans-serif;
+    margin-bottom: 50px;
+}
+
+
 #logo {
     margin-top: 13px;
 }
 
-#content {
-    margin-top: 100px;
+#content-container {
+    padding: 100px 0 100px 0;
+    background: #FFF;
+}
+
+.gist-container {
+    text-align: center;
 }
 
 footer {
-    margin-top: 50px;
-    border-top: 1px dotted #EFEFEF;
-    padding-top: 10px;
+    margin-top: 20px;
 }
 
     footer ul {

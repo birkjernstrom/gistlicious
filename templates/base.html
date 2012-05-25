@@ -4,6 +4,7 @@
 	<title>Gistlicious {% block title %}{% endblock %}</title>
 	<link rel="stylesheet" href="/static/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="/static/css/base.css" />
+	<link href='http://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8" />
 	<meta content="Gistlicious" property="og:title" />
 	<meta content="Compare gists and vote which is hot and which is not" property="og:description" />
@@ -42,8 +43,10 @@
 		</div>
 	</header>
 
-	<div id="content" class="container">
-		{% block body %}{% endblock %}
+	<div id="content-container">
+		<div id="content" class="container">
+			{% block body %}{% endblock %}
+		</div>
 	</div>
 
 	<footer class="container">
